@@ -52,8 +52,8 @@ ID_COLUMN="$3"
 shift 3
 SHUFFLE_COLUMNS=("$@")
 ```
-	- $1, $2, $3: Database name, table name, and ID column.
-	- shift 3: Shifts the first three arguments so that $@ contains the list of columns to shuffle.
+- $1, $2, $3: Database name, table name, and ID column.
+- shift 3: Shifts the first three arguments so that $@ contains the list of columns to shuffle.
 
 ### 4. Constructing the SQL Query
 The script dynamically constructs an SQL query to create a temporary table (shuffled) that contains the shuffled values of the specified columns. Here’s a breakdown of the query construction:
@@ -114,8 +114,11 @@ or
 ```bash
 ./shuffle_data.sh your_database_name your_table_name your_id_column col1 col2....coln
 ```
+---
 ## Conclusion
 This script provides an automated and efficient way to shuffle data in MySQL tables. By leveraging Bash and MySQL, it can randomize values in specified columns, which can be useful for data analysis, anonymization, or testing purposes. With proper setup and precautions, it can be safely used to modify backed-up production data for different purposes. However, it is important to consider the impact of shuffling data on referential integrity in databases. Randomizing values in tables that have foreign key constraints could lead to broken relationships between tables, resulting in inconsistencies or data corruption. Ensuring referential integrity during the shuffling process is crucial to maintain the accuracy and reliability of the database.
+
+---
 
 ## What next : 
 While there is always room for improvement, here are a few areas that need attention:
