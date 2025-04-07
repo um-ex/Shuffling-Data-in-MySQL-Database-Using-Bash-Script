@@ -1,10 +1,9 @@
-
-# 🔀 Shuffling Data in MySQL Table Using a Bash Script
-
-This Bash script is designed to **shuffle data** in a specified MySQL table. It randomly rearranges values in selected columns and updates the original table with these shuffled values—useful for data anonymization or test data generation.
+## Shuffling Data in MySQL Database Using Bash Script
+## Overview
+This Bash script is designed to shuffle data in a specified MySQL table. It takes columns from a table and randomly shuffles their values, then updates the original table with the shuffled values. The script makes use of a temporary table to store shuffled data and performs the necessary updates through SQL queries.
+The script is executed in a Linux environment and uses MySQL as the database management system. The database credentials are retrieved from a .env file.
 
 ---
-
 ## 📌 Overview
 
 - ✅ Uses **MySQL** as the database.
