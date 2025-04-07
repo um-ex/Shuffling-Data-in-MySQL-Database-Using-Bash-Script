@@ -103,7 +103,7 @@ fi
 ```
 ---
 ## Run the Script:
-Run the script by passing the required arguments:
+Run the script by passing the required arguments:  
 	- chmod +x scriptName.sh
 	- bash shuffle_data.sh your_database_name your_table_name your_id_column col1 col2…..col n.
 ```bash
